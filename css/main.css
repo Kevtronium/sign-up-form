@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* App */
+.app {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Content */
+
+.content {
+  flex: 0 1 70%;
+}
+
+/* Sidebar */
+.sidebar {
+  background-image: url('../images/leaf-plant.jpg');
+  flex: 0 2 30%;
+  text-align: center;
+}
+
+.logo-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.logo-container > img {
+  height: 150px;
+}
