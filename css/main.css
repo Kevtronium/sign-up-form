@@ -4,6 +4,19 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Norse';
+  src: local('Norse'), url('../Norse-Bold.otf') format('opentype');
+}
+
+:root {
+  --lighter-white: rgba(255, 255, 255, 0.75);
+}
+
+body {
+  font-family: sans-serif;
+}
+
 /* App */
 .app {
   display: flex;
@@ -21,13 +34,35 @@
   background-image: url('../images/leaf-plant.jpg');
   flex: 0 2 30%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 212px 0 12px;
 }
 
 .logo-container {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
+  padding: 12px 0 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-container > span {
+  font-family: 'Norse', sans-serif;
+  font-size: 6rem;
+  align-self: center;
 }
 
 .logo-container > img {
-  height: 150px;
+  height: 120px;
+}
+
+.photo-attr {
+  color: var(--lighter-white);
+  font-size: 0.85rem;
+}
+
+.photo-attr > a {
+  color: var(--lighter-white);
 }
