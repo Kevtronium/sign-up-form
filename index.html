@@ -32,10 +32,51 @@
         <div class="header">
           <p>
             This is not a real online service! You know you need something like
-            this in your life to help you realize your deepedst dreams. Sign up
+            this in your life to help you realize your deepest dreams. Sign up
             now to get started.
           </p>
-          <p>You know you want to</p>
+          <p>You know you want to.</p>
+        </div>
+        <form id="sign-up-form">
+          <h2>Let's do this</h2>
+          <div class="username">
+            <div class="fname-container">
+              <label for="first-name">FIRST NAME</label>
+              <input type="text" name="first_name" id="first-name" />
+            </div>
+            <div class="lname-container">
+              <label for="last-name">LAST NAME</label>
+              <input type="text" name="last_name" id="last-name" />
+            </div>
+          </div>
+          <div class="contact-info">
+            <div class="email-container">
+              <label for="email">EMAIL</label>
+              <input type="email" name="email" id="email" />
+            </div>
+            <div class="phone-number-container">
+              <label for="phone-number">PHONE NUMBER</label>
+              <input type="tel" name="phone_num" id="phone-number" />
+            </div>
+          </div>
+          <div class="pwd-container">
+            <div class="first-pwd-container">
+              <label for="first-pwd">PASSWORD</label>
+              <input type="password" name="pwd" id="first-pwd" />
+            </div>
+            <div class="confirm-pwd-container">
+              <label for="confirm-pwd">CONFIRM PASSWORD</label>
+              <input type="password" name="confirm-pwd" id="confirm-pwd" />
+            </div>
+          </div>
+        </form>
+        <div class="footer">
+          <button form="sign-up-form" type="submit">Create Account</button>
+
+          <div class="login">
+            <p>Already have an account</p>
+            <a href="">Log in</a>
+          </div>
         </div>
       </div>
     </div>
