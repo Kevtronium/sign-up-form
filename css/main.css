@@ -11,10 +11,14 @@
 
 :root {
   --lighter-white: rgba(255, 255, 255, 0.75);
+  --main-bg-color: rgba(249, 250, 251, 255);
+  --text-label-color: rgba(0, 0, 0, 1);
+  --border-color: rgb(229, 231, 235);
+  --valid-input-color: rgb(75, 132, 245);
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* App */
@@ -26,34 +30,62 @@ body {
 /* Content */
 
 .content {
+  background-color: var(--main-bg-color);
   width: 70%;
   display: flex;
   flex-direction: column;
-  padding-left: 42px;
 }
 
 .header {
-  flex: 0 0 40%;
+  flex: 0 0 33%;
   font-weight: bold;
   font-size: 1.3rem;
-  padding-right: 30%;
+  padding: 10% 30% 0 4%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 32px;
+  gap: 2rem;
 }
 
 #sign-up-form {
   flex: 0 0 20%;
+  background-color: rgba(255, 255, 255);
+  padding: 1rem 0 2rem 4%;
+  box-shadow: 0 10px 2px rgba(150, 147, 147, 0.13);
 }
 
 label {
   display: block;
+  color: var(--text-label-color);
+  letter-spacing: 0.3ch;
+  font-weight: bold;
+  font-size: 0.75rem;
+  height: 15px; /*Prevents label from overlapping input elements */
+}
+
+input {
+  padding: 4px 0 4px;
+  border: 1px solid var(--border-color);
+  border-radius: 2px;
+  width: 250px;
+}
+
+input:focus-visible {
+  outline-color: var(--valid-input-color);
+}
+
+.username,
+.contact-info {
+  margin-bottom: 1rem;
+}
+
+#sign-up-form h2 {
+  margin-bottom: 1rem;
 }
 
 #sign-up-form > div {
   display: flex;
-  gap: 48px;
+  gap: 3rem;
 }
 
 /* Sidebar */
