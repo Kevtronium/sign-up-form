@@ -15,6 +15,7 @@
   --text-label-color: rgba(0, 0, 0, 1);
   --border-color: rgb(229, 231, 235);
   --valid-input-color: rgb(75, 132, 245);
+  --button-color: rgb(89, 109, 72);
 }
 
 body {
@@ -86,6 +87,36 @@ input:focus-visible {
 #sign-up-form > div {
   display: flex;
   gap: 3rem;
+}
+
+.footer {
+  padding: 2.5rem 0 0 2rem;
+}
+
+button {
+  padding: 0.75rem 2.5rem;
+  margin-bottom: 2.5rem;
+  background-color: var(--button-color);
+  border-radius: 0.5rem;
+  color: white;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.login {
+  display: flex;
+  gap: 0.3rem;
+  font-size: 1.25rem;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+a,
+a:visited {
+  color: var(--button-color);
 }
 
 /* Sidebar */
